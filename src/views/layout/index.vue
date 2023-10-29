@@ -78,9 +78,9 @@ export default {
     }
   },
   created () {
-    if (this.username) {
-      this.getMenusListFn()
-    }
+
+    this.getMenusListFn()
+
   },
   computed: {
     ...mapGetters(['nickname', 'username', 'user_pic'])
