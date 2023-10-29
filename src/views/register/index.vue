@@ -70,7 +70,7 @@ export default {
       this.$refs.regForm.validate(async valid => {
         if (!valid) return false
         const { data: res } = await registerAPI(this.regForm)
-        console.log(res)
+        // console.log(res)
         if (res.code !== 0) return this.$message.error('注册失败')
         this.$message.success('注册成功！')
         this.$router.push('/login')

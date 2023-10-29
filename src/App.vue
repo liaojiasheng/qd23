@@ -5,17 +5,17 @@
 </template>
 
 <script>
-import { getAPIList } from './api'
+
 export default {
   name: 'App',
+  computed: {
+
+  },
   created () {
-    this.getURLFn()
+
   },
   methods: {
-    async getURLFn () {
-      const res = await getAPIList()
-      console.log(res)
-    }
+
   }
 }
 </script>

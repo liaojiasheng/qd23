@@ -59,7 +59,8 @@ export default {
         if (res.code !== 0) return this.$message.error('登录失败！')
         this.$message.success('登录成功！')
         this.updateToken(res.token)
-        console.log(this.token)
+        this.$router.push('/')
+        // console.log(this.token)
       })
     }
   }
